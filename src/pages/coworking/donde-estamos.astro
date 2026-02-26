@@ -1,0 +1,50 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout title="Dónde estamos" description="Espacio Arroelo en Cobián Roffignac 6, Pontevedra. Cómo llegar en coche, tren, avión o bus. Aparcamiento.">
+	<article class="content">
+		<h1 class="page-title">Dónde estamos</h1>
+
+		<div class="map-wrap">
+			<iframe
+				title="Ubicación de Espacio Arroelo en Google Maps"
+				src="https://maps.google.com/maps?q=Cobi%C3%A1n+Roffignac+6,+36002+Pontevedra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+				width="100%"
+				height="300"
+				style="border:0; border-radius: var(--radius);"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+			<p>
+				<a href="https://goo.gl/maps/5NGwpxUtGAKinm9z9" target="_blank" rel="noopener noreferrer">Abrir en Google Maps ↗</a>
+			</p>
+		</div>
+
+		<h2>Para aparcar</h2>
+		<p>Espacio Arroelo está situado en el centro de la ciudad. Si vienes en coche, tienes dos opciones:</p>
+		<ul>
+			<li>Parking disuasorio gratuito en el Gremio de Mareantes.</li>
+			<li>Parkings de pago (el más cercano es el de Plaza de Barcelos).</li>
+		</ul>
+
+		<h2>En tren</h2>
+		<p>Puedes llegar en tren a Pontevedra. La estación está a tan solo 15 minutos andando de nuestro coworking.</p>
+
+		<h2>En avión</h2>
+		<p>Puedes volar a Vigo, Santiago de Compostela o Oporto. Desde allí puedes llegar en bus a la estación de tren destino Pontevedra.</p>
+
+		<h2>En bus</h2>
+		<p>Puedes coger el bus a Pontevedra. Desde allí tardas 15 minutos a pie a nuestro coworking.</p>
+	</article>
+</Layout>
+
+<style>
+	.map-wrap {
+		margin: var(--space-lg) 0;
+	}
+	.map-wrap p {
+		margin-top: var(--space-sm);
+	}
+</style>

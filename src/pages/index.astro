@@ -1,0 +1,80 @@
+---
+import Layout from '../components/Layout.astro';
+---
+
+<Layout title="Inicio" description="Espacio Arroelo. Coworking en harmonía en Cobián Roffignac 6, Pontevedra. Valores, misión, comunidad y changemakers.">
+	<article class="content">
+		<h1>Espacio Arroelo. Cobián Roffignac 6</h1>
+
+		<h2>Nos mueven nuestros valores</h2>
+		<ul>
+			<li><strong>💓 Pasión:</strong> Hacemos lo que nos gusta porque nos motiva.</li>
+			<li><strong>💪 Valentía:</strong> Prohibido no equivocarse. Aprendemos haciendo, disfrutamos de la serendipia.</li>
+			<li><strong>🧠 Compartir conocimiento:</strong> Trabajamos en valores, nos formamos en destrezas.</li>
+			<li><strong>💡 Inspiración:</strong> Lo mejor que le puede pasar a una idea es que sea replicada, significa que es realmente buena.</li>
+			<li><strong>👥 Personas:</strong> Colaboramos, no competimos. Juntas, entre todas las personas, accedemos a mejores oportunidades. Lo importante es el equipo. Complementarnos con otras personas es lo que nos hace grandes.</li>
+		</ul>
+
+		<h2>Nuestra misión</h2>
+		<ul>
+			<li>Desarrollamos proyectos de innovación social que nos ayudan a construir en libertad el mundo que queremos.</li>
+			<li>Hacemos feliz al talento.</li>
+			<li>Facilitamos que las cosas ocurran.</li>
+		</ul>
+
+		<nav class="card-grid" aria-label="Secciones del sitio">
+			<a href="/coworking/" class="card">
+				<strong>Coworking en harmonía</strong>
+				<p>Dónde estamos, cosas de casa, Guía Zen, Seguriño y plan de desconexión digital.</p>
+			</a>
+			<a href="/comunidad" class="card">
+				<strong>Construyendo la comunidad</strong>
+				<p>Café a la fresca, Con Té de Tarde, PonteBlogs, visibilidad y acuerdos.</p>
+			</a>
+			<a href="/changemakers" class="card">
+				<strong>Changemakers</strong>
+				<p>Proyectos de impacto: Creative Habitat, Rural Hackers, Stopphubbing.me y más.</p>
+			</a>
+			<a href="/alianzas" class="card">
+				<strong>Alianzas</strong>
+				<p>Anceu, Creative Habitat, Rural Hackers, Down Xuntos, Malayaka House...</p>
+			</a>
+			<a href="/equipo" class="card">
+				<strong>Nuestro equipo</strong>
+				<p>Conoce a la Arroeloverfamily.</p>
+			</a>
+		</nav>
+	</article>
+</Layout>
+
+<style>
+	.card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+		gap: var(--space-lg);
+		margin-top: var(--space-2xl);
+	}
+	.card {
+		display: block;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+		padding: var(--space-lg);
+		text-decoration: none;
+		color: inherit;
+		transition: border-color 0.2s, box-shadow 0.2s;
+	}
+	.card:hover {
+		border-color: var(--color-accent-light);
+		box-shadow: 0 4px 12px rgba(45, 106, 79, 0.12);
+	}
+	.card strong {
+		color: var(--color-accent);
+		font-size: 1.1rem;
+	}
+	.card p {
+		margin: var(--space-sm) 0 0;
+		font-size: 0.95rem;
+		color: var(--color-text-muted);
+	}
+</style>

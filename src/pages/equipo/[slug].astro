@@ -1,0 +1,48 @@
+---
+import Layout from '../../components/Layout.astro';
+import equipo from '../../data/equipo.json';
+
+export function getStaticPaths() {
+	return equipo.map((persona) => ({
+		params: { slug: persona.slug },
+		props: { persona },
+	}));
+}
+
+const { persona } = Astro.props;
+---
+
+<Layout title={persona.name} description={`${persona.name} — Espacio Arroelo.`}>
+	<article class="content team-page">
+		<p><a href="/equipo">← Volver al equipo</a></p>
+
+		<div class="team-detail">
+			<img
+				class="team-photo"
+				src={persona.photo ? `/equipo/${persona.photo}` : '/equipo/placeholder.svg'}
+				alt=""
+				width="280"
+				height="280"
+			/>
+			<h1 class="page-title">{persona.name}</h1>
+		</div>
+	</article>
+</Layout>
+
+<style>
+	.team-detail {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--space-lg);
+		margin-top: var(--space-xl);
+	}
+	.team-page .team-photo {
+		width: 280px;
+		height: 280px;
+		object-fit: cover;
+		border-radius: 50%;
+		background: var(--color-accent-soft);
+		filter: grayscale(100%);
+	}
+</style>

@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Espacio Arroelo — Coworking en harmonía en el centro de Pontevedra. Valores, comunidad, changemakers y alianzas." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content={description} />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Espacio Arroelo</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet" />
+	<body>
+		<header class="site-header">
+			<a href="/" class="logo">Espacio Arroelo</a>
+			<nav class="nav" aria-label="Principal">
+				<button type="button" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+				</button>
+				<ul class="nav-list">
+					<li><a href="/">Inicio</a></li>
+					<li class="nav-dropdown">
+						<a href="/coworking/">Coworking</a>
+						<ul class="nav-sublist">
+							<li><a href="/coworking/donde-estamos">Dónde estamos</a></li>
+							<li><a href="/coworking/cosas-de-casa">Cosas de casa</a></li>
+							<li><a href="/coworking/guia-zen">Guía Zen</a></li>
+							<li><a href="/coworking/capitan-planeta">Capitán Planeta</a></li>
+							<li><a href="/coworking/segurino">Seguriño</a></li>
+							<li><a href="/coworking/desconexion-digital">Desconexión digital</a></li>
+						</ul>
+					</li>
+					<li><a href="/comunidad">Comunidad</a></li>
+					<li><a href="/changemakers">Changemakers</a></li>
+					<li><a href="/alianzas">Alianzas</a></li>
+					<li><a href="/equipo">Equipo</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<p><strong>Espacio Arroelo</strong> — Cobián Roffignac 6, Pontevedra</p>
+			<p>Contacto: <a href="mailto:info@espacioarroelo.es">info@espacioarroelo.es</a> · <a href="tel:+34610602012">610 602 012</a></p>
+			<p><a href="/coworking/donde-estamos">Cómo llegar</a> · <a href="/equipo">Nuestro equipo</a></p>
+		</footer>
+		<script>
+			document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+				const btn = document.querySelector('.nav-toggle');
+				const expanded = btn?.getAttribute('aria-expanded') !== 'true';
+				btn?.setAttribute('aria-expanded', String(expanded));
+				document.body.classList.toggle('nav-open', expanded);
+			});
+		</script>
+	</body>
+</html>

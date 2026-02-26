@@ -1,0 +1,38 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout title="Coworking en harmonía" description="Coworking en harmonía en Espacio Arroelo: dónde estamos, cosas de casa, Guía Zen, Seguriño y plan de desconexión digital.">
+	<article class="content">
+		<h1 class="page-title">Coworking en harmonía</h1>
+
+		<p>Todo lo que necesitas saber sobre el espacio: ubicación, normas de casa, seguridad y nuestro compromiso con la desconexión digital.</p>
+
+		<ul class="link-list">
+			<li><a href="/coworking/donde-estamos">Dónde estamos</a> — Cómo llegar en coche, tren, avión o bus. Mapa y aparcamiento.</li>
+			<li><a href="/coworking/cosas-de-casa">Cosas de casa</a> — Guía Zen y política de sostenibilidad (Capitán Planeta).</li>
+			<li><a href="/coworking/guia-zen">Guía Zen</a> — Horarios, normas, reserva de salas y limpieza.</li>
+			<li><a href="/coworking/capitan-planeta">Ayudando al Capitán Planeta</a> — Nuestra política de sostenibilidad.</li>
+			<li><a href="/coworking/segurino">Seguriño</a> — Acceso con Nuki y alarma.</li>
+			<li><a href="/coworking/desconexion-digital">Nuestro plan de Desconexión Digital</a> — Stopphubbing.me y uso responsable de la tecnología.</li>
+		</ul>
+	</article>
+</Layout>
+
+<style>
+	.link-list {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-xl) 0 0;
+	}
+	.link-list li {
+		margin-bottom: var(--space-md);
+		padding: var(--space-md);
+		background: var(--color-surface);
+		border-radius: var(--radius);
+		border: 1px solid var(--color-border);
+	}
+	.link-list a {
+		font-weight: 600;
+	}
+</style>

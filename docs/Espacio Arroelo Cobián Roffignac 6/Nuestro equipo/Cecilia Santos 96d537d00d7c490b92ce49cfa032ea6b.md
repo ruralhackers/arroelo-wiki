@@ -1,0 +1,6 @@
+# Cecilia Santos
+
+Created: January 2, 2023 10:13 PM
+Role: Atención a la clientela y Logística
+Talento 1: Atención a la clientela 
+Talento: Gestión y logística

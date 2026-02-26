@@ -1,0 +1,34 @@
+---
+import Layout from '../../components/Layout.astro';
+---
+
+<Layout title="Cosas de casa" description="Cosas de casa en Espacio Arroelo: Guía Zen y política de sostenibilidad Ayudando al Capitán Planeta.">
+	<article class="content">
+		<h1 class="page-title">Cosas de casa</h1>
+
+		<p>Normas de convivencia y sostenibilidad en el espacio.</p>
+
+		<ul class="link-list">
+			<li><a href="/coworking/guia-zen">Guía Zen</a> — Horarios, gestión de espacios compartidos, reserva de salas, política de limpieza y consejos para tu creatividad.</li>
+			<li><a href="/coworking/capitan-planeta">Ayudando al Capitán Planeta</a> — Nuestra política de sostenibilidad: energía, reciclaje, productos ecológicos.</li>
+		</ul>
+		</article>
+</Layout>
+
+<style>
+	.link-list {
+		list-style: none;
+		padding: 0;
+		margin: var(--space-xl) 0 0;
+	}
+	.link-list li {
+		margin-bottom: var(--space-md);
+		padding: var(--space-md);
+		background: var(--color-surface);
+		border-radius: var(--radius);
+		border: 1px solid var(--color-border);
+	}
+	.link-list a {
+		font-weight: 600;
+	}
+</style>

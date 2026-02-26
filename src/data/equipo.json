@@ -1,0 +1,102 @@
+[
+  {
+    "name": "África Rodríguez",
+    "slug": "africa-rodriguez",
+    "photo": "africa-rodriguez.jpg",
+    "role": "Directora de Entusiasmo y Felicidad",
+    "email": "africa@espacioarroelo.es",
+    "phone": "0034610602012",
+    "talento": "Activista de la Cultura Colaborativa en Ticket2europe, Cuatro Sequoias y Cohousing.gal",
+    "talento1": "Cofundadora de Espacio Arroelo"
+  },
+  {
+    "name": "Agata Stiger",
+    "slug": "agata-stiger",
+    "photo": "agata-stiger.jpg",
+    "role": "Atención a la clientela",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": "Fundadora de Llaves para aprender"
+  },
+  {
+    "name": "Ana Santos",
+    "slug": "ana-santos",
+    "photo": "ana-santos.jpg",
+    "role": "Atención a la clientela",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": "Fundadora de De Vella a Bella"
+  },
+  {
+    "name": "Baia Fernández",
+    "slug": "baia-fernandez",
+    "photo": "baia-fernandez.png",
+    "role": "Atención a la clientela y Logística",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": ""
+  },
+  {
+    "name": "Cecilia Santos",
+    "slug": "cecilia-santos",
+    "photo": "cecilia-santos.png",
+    "role": "Atención a la clientela y Logística",
+    "email": "",
+    "phone": "",
+    "talento": "Gestión y logística",
+    "talento1": "Atención a la clientela"
+  },
+  {
+    "name": "Celso Luengo",
+    "slug": "celso-luengo",
+    "photo": "celso-luengo.jpg",
+    "role": "Atención a la clientela y Logística",
+    "email": "",
+    "phone": "",
+    "talento": "Gestión y logística",
+    "talento1": "Atención a la clientela"
+  },
+  {
+    "name": "Elisabet Hillerud",
+    "slug": "elisabet-hillerud",
+    "photo": "elisabet-hillerud.png",
+    "role": "Atención a la clientela",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": ""
+  },
+  {
+    "name": "Helena",
+    "slug": "helena",
+    "photo": "helena.png",
+    "role": "",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": ""
+  },
+  {
+    "name": "Isabel Ures",
+    "slug": "isabel-ures",
+    "photo": "isabel-ures.png",
+    "role": "Atención a la clientela",
+    "email": "",
+    "phone": "",
+    "talento": "",
+    "talento1": ""
+  },
+  {
+    "name": "María Pierres",
+    "slug": "maria-pierres",
+    "photo": "maria-pierres.jpg",
+    "role": "Directora de Ingenio y Locuras",
+    "email": "maria@espacioarroelo.es",
+    "phone": "",
+    "talento": "Arquitecta",
+    "talento1": "Cofundadora de Espacio Arroelo"
+  }
+]
