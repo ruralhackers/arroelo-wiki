@@ -8,5 +8,7 @@
 
 [Nuestro plan de Desconexión Digital](Coworking%20en%20harmon%C3%ADa/Nuestro%20plan%20de%20Desconexi%C3%B3n%20Digital%200ae42271de574d6183af6b5e428e1489.md)
 
+[Tarifa sala abierta](Coworking%20en%20harmon%C3%ADa/Tarifa%20sala%20abierta.md)
+
 | [Espacio Arroelo](../Espacio%20Arroelo%20Cobi%C3%A1n%20Roffignac%206%20467d3b45e6784c78bfc5d84cfc25b3e4.md) |  |
 | --- | --- |
